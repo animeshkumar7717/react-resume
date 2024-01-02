@@ -8,16 +8,21 @@ import Experiences from './components/pages/experiences/Experiences';
 import Educations from './components/pages/educations/Educations';
 import Portfolios from './components/pages/portfolios/Portfolios';
 import './App.css';
-import Pages from './pages';
-import Navbar from './components/navbar/Navbar';
+import Certification from './components/pages/certification/Certification';
 
-function App() {
+function Pages() {
   return (
-    <Router>
-      <Navbar />
-      <Pages />
-    </Router>
+      <>
+        <Route exact path="/" component={Home} />
+        <Switch>
+          <Route path="/skills" component={Skills} />
+          <Route path="/experiences" component={Experiences} />
+          <Route path="/educations" component={Educations} />
+          <Route path="/certification" component={Certification} />
+          <Route path="/portfolios" component={Portfolios} />
+        </Switch>
+      </>
   );
 }
 
-export default App;
+export default Pages;
