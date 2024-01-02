@@ -19,7 +19,7 @@ function Pages() {
           <Route path="/experiences" component={Experiences} />
           <Route path="/educations" component={Educations} />
           <Route path="/certification" component={Certification} />
-          <Route path="/portfolios" component={Portfolios} />
+          {/* <Route path="/portfolios" component={Portfolios} /> */}
         </Switch>
       </>
   );
