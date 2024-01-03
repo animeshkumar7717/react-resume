@@ -4,7 +4,6 @@ import About from './about/About';
 import Skills from './skills/Skills';
 import Experiences from './experiences/Experiences';
 import Educations from './educations/Educations';
-import Portfolios from './portfolios/Portfolios';
 import Certification from './certification/Certification';
 
 export default class Home extends Component {
@@ -22,7 +21,6 @@ export default class Home extends Component {
 							<Certification />
 							<Skills />
 							<Educations />
-							{/* <Portfolios /> */}
 						</div>
 					</div>
 				</div>
